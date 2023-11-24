@@ -12,3 +12,19 @@ function orderCake() {
     quantity: 1,
   };
 }
+
+//(prevState, action) => newState
+const initialState = {
+  totalCake: 10,
+};
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case CAKE_ORDERED:
+      return {
+        totalCake: state.totalCake - 1,
+      };
+    default:
+      return state;
+  }
+};
