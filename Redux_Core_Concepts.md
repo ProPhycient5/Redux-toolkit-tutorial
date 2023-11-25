@@ -31,3 +31,14 @@
 - Function that accepts state and action as arguments and returns the next state of the application
 - (previousState, action) => newState
 
+## Redux `Store`:
+
+- One store for the entire application.
+
+#### Responsibilities:
+- Holds application state
+- Allow access to state via getState()
+- Allow state to be updated via dispatch(action)
+- Registers listeners via subscribe(listener)
+- Handles unregistering of listeners via the function returned by subscribe(listener) 
+
