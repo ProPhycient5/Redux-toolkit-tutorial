@@ -54,3 +54,6 @@ Ex: todo list app --> item(pending) --> item(completed)
 2. The app state is updated frequently over time.
 3. The logic to update the state may be complex.
 4. The app has a medium or large sized codebase, and might be worked on by many people.
+
+## Immer
+We have used Immer for updating immutable state in reducer function
