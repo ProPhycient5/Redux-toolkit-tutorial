@@ -42,3 +42,35 @@
 - Registers listeners via subscribe(listener)
 - Handles unregistering of listeners via the function returned by subscribe(listener) 
 
+## Three Principle of Redux:
+- ### First Principle
+  - "The global state of your application is stored as an object inside a single store".
+  - Maintain our application state in a single objecr which would be managed by the Redux store.
+
+  - Ex:
+Cake Shop -
+Let's assume we are tracking the number of cakes on the shelf
+{
+numberOfCakes: 10
+}
+
+- ### Second Principle
+  - "The only way to change the state is to dispatch an action, an object that describes what happened".
+  - To update the state of the app, you need to let Redux know about that with an action.
+  - Not allowed to directly update the state object.
+  - Ex:
+Cake Shop: Scan the QR code and place an order - Cake_Ordered
+
+{
+ type : `CAKE_ORDERED`
+}
+
+- ### Third Principle
+  - "To specify how the state tree is updated based on actions, you write pure reducers".
+  - Reducer - (previousState, action) => newState
+  - Ex:
+Cake Shop: Reducer is the shopkeeper
+
+
+![Redux_architecture](https://github.com/ProPhycient5/Redux-toolkit-tutorial/assets/71059909/04778499-567e-403e-a3ab-c5974d32d650)
+
