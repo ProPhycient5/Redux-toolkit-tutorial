@@ -45,7 +45,7 @@
 ## Three Principle of Redux:
 - ### First Principle
   - "The global state of your application is stored as an object inside a single store".
-  - Maintain our application state in a single objecr which would be managed by the Redux store.
+  - Maintain our application state in a single object which would be managed by the Redux store.
 
   - Ex:
 Cake Shop -
